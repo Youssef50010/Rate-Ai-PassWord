@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate Ai Password</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#0a1220] w-full h-[100dvh] p-[0px] m-[0px] flex items-center">
+    <header class="absolute top-[0px] bg-gray-500 w-full h-[50px] rounded-b-[20px] flex justify-center items-center gap-[30px]">
+        <div class="relative text-white font-bold text-xl">خمن قوة باسورد الذكاء الأصطناعي 🤖</div>
+    </header>
+    <main class="relative w-[100%] mt-[20px] mx-[10px] h-[70%] bg-[#131a2e] rounded-[15px] border-[1px] border-[#1e2a4a] flex flex-col">
+        <section class="relative mx-[10px] mt-[15px]">
+            <div id="star" class="absolute right-[10px] font-bold text-yellow-300 text-xl">نجوم : 0 ⭐</div>
+            <div id="Goal" class="absolute left-[10px] font-bold text-green-500 text-xl">هدف : 10 🎯</div>
+        </section>
+        <section class="mt-[75px]">
+            <div class="text-[#8a9ac0]">كلمة المرور العشوائية : </div>
+            <div id="input" class="bg-[#1d2a4d] rounded-[50px] border-[2px] border-[#2ad4ea] flex justify-center items-center font-bold text-white mt-[15px] mx-[15px] h-[50px]">---</div>
+            <div class="text-white font-bold flex justify-center mt-[15px] text-[18px]">تفتكر الباسورد ده قوي ولا متوسط ولا ضعيف؟</div>
+            <div class="flex justify-center items-center mt-[30px] gap-[15px]">
+                <button onclick="guess('قوي')" class="bg-green-500 w-[25%] h-[35px] rounded-[15px]">قوي</button>
+                <button onclick="guess('متوسط')" class="bg-orange-500 w-[25%] h-[35px] rounded-[15px]">متوسط</button>
+                <button onclick="guess('ضعيف')" class="bg-red-500 w-[25%] h-[35px] rounded-[15px]">ضعيف</button>
+            </div>
+        </section>
+        <section>
+            <div id="details" class="whitespace-pre-line bg-[#2c4a6a] text-[#a8d8ff] mt-[15px] mx-[15px] rounded-[15px] h-[140px] px-[15px] flex justify-center items-center">نصيحة: كلمة المرور القوية تحتوي على أحرف كبيرة + صغيرة + أرقام + رموز
+                
+                نصيحة: كلمة المرور الضعيفة تحتوي علي أحرف + أرقام
+            </div>
+        </section>
+        <section class="mt-auto">
+            <span id="ques" class=" text-white mr-[15px]">سؤال 0 من 10</span>
+            <span id="Percentage" class="absolute left-[15px] text-white">%0</span>
+        </section>
+        <section class="mt-auto">
+            <div class="mb-[25px] bg-[#1e2a4a] h-[24px] mx-[15px] rounded-[25px]">
+                <div id="fill" class="w-[0px] h-full bg-[#2ad4ea] rounded-[25px] transition-all duration-300 ease-in-out"></div>
+            </div>
+        </section>
+    </main>
+    <footer class="absolute bottom-[0px] w-full h-[50px] border-t-[1px] border-[#222] flex justify-center items-center p-0 m-0">
+        <div class="text-gray-500 text-[95%]">تواصل معنا • سياسة خصوصية محفوظة • جميع الحقوق محفوظة ©️</div>
+    </footer>
+    <script src='https://cdn.jsdelivr.net/gh/Youssef50010/Library-Answer.js@main/Answer.js'></script>
+    <script src="./script.js"></script>
+</body>
+</html>
